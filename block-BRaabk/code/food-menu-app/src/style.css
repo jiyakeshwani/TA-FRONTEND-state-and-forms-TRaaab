@@ -1,0 +1,226 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+body{
+    background-color: #F8F8E2;
+}
+
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #0A2442;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.tags{
+max-width: 400px;
+margin: 0 auto;
+padding: 2rem 0;
+
+
+}
+.tag{
+color:  #C09D8F;
+font-size: 1.3rem;
+text-transform: capitalize;
+
+}
+
+.tag:hover{
+    background-color: #C09D8F;
+    color: white;
+    border: 1px solid white;
+    font-size: 1.3rem;
+    padding: 0.8rem;
+}
+.active{
+    background-color: white;
+    color: #0A2442;
+    border: 1px solid #0A2442;
+    font-size: 1.3rem;
+    padding: 0.8rem;
+    text-transform: capitalize;
+}
+.food-menu{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.food{
+flex-basis: 45%;
+display: flex;
+justify-content: space-between;
+margin-bottom: 2rem;
+}
+.img-box{
+    width: 250px;
+    height: 200px;
+   
+    box-sizing: border-box;
+    margin-right: 2rem;
+    
+}
+.img{
+   width: 200px;
+   height: 80%;
+   border: 3px solid #C09D8F;
+   
+}
+h2{
+    color: #0A2442;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+span{
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color:  #C09D8F;
+}
+p{
+    font-weight: 500;
+   color: #5e5e87;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-top: 2rem;
+}
