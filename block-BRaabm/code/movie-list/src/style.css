@@ -1,0 +1,298 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+
+.container{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+h1{
+    color: rgb(6, 6, 53);
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.movie{
+    background: linear-gradient(#D083DB , #C53983);
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    
+    
+}
+
+
+.img{
+    max-width: 500px;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+h2{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.release{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 600;
+    
+}
+.detail{
+    margin-left: 4rem;
+}
+.movie:hover{
+    background: linear-gradient(rgba(208, 131, 219 , 0.2) , rgba(197, 57, 131 , 0.2));
+   
+}
+.movie:hover .btn{
+    display: block;
+}
+
+.btn{
+    padding: 1rem;
+    background-color: rgb(67, 184, 67);
+    color: white;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    position: absolute;
+    margin-left: 37rem;
+    margin-top: 7rem;
+    display: none;
+}
+.modal{
+    position:fixed;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+ 
+background: linear-gradient(#B1D5F2 , #2490e9);
+}
+.hidden{
+    display: none;
+}
+.cross{
+    font-size: 1rem;
+    color: black;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    
+}
+.img2{
+    width: 300px;
+    height: 280px;
+    border-radius: 50%;
+    
+}
+.flex{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem
+}
+h3{
+    color: darkblue;
+    font-size: 3rem;
+    font-weight: 700;
+   margin-left: 2rem;
+    margin-bottom: 2rem; 
+}
+h4{
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+   margin-left: 2rem;
+   margin-bottom: 2rem;
+     
+}
+.year{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+   margin-left: 2rem;
+  
+}
+.genre{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+   margin-left: 4rem;
+   margin-bottom: 2rem;
+}
+.rated , .runtime , .plot{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+   margin-left: 4rem;
+}
+.plot{
+    margin-top: 2rem    ;
+}
+.writers{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 30%;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+ .actors{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 30%;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+ }
+ .imdb p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 4 0%;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+ }
+ .span{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 4 0%;
+    margin-left: 4rem;
+    display: inline-block;
+ 
+ }
