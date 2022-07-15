@@ -6,7 +6,11 @@ function Main(props) {
   return (
     <>
       <main className="main ">
-        <Product data={props.products} />
+        <Product
+          data={props.products}
+          selectedSizes={props.selectedSizes}
+          handleCart={props.handleCart}
+        />
       </main>
     </>
   );

@@ -103,6 +103,7 @@ margin-right: 1rem;
 position: relative;
 margin-bottom: 2rem;
 
+
 }
 .product-img{
 	border: 2px solid #ECECEC;
@@ -142,4 +143,196 @@ h3{
 	border: 0;
 	background-color: #1B1A20;
 	font-size: 1.2rem;
+}
+.active-size{
+	border-radius: 50%;
+	padding: 1rem;
+	background-color: #EABF00;
+	margin-right: 2rem;
+	margin-bottom: 2rem;
+}
+.btn1:hover{
+	display: block;
+	width: 100%;
+	padding: 1rem;
+	margin-top: 1rem;
+	color: white;
+	border: 0;
+	background-color: #EABF00;
+	font-size: 1.2rem;
+}
+  
+select{
+	margin-left: 1rem;
+	border: 1px solid black;
+}
+
+.cart{
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: right 0.9s ease 0s;
+	width: 30%;
+    
+    
+    
+}
+
+.cart-icon{
+
+	color: white;
+	padding: 0.6rem 1.2rem;
+
+
+    color: rgb(236, 236, 236);
+    background-color: rgb(27, 26, 32);
+    text-align: center;
+  
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    z-index: 2;
+
+}
+.icon{
+	width: 2.2rem;
+	height: 2.2rem;
+}
+.cart-count{
+	display: inline-block;
+    width: 18px;
+    height: 18px;
+    color: rgb(12, 11, 16);
+    font-weight: bold;
+    font-size: 0.7em;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    background-color: rgb(234, 191, 0);
+    position: absolute;
+    bottom: 8px;
+    right: 15px; 
+}
+.cart-data{
+     
+    height: 100vh; 
+     background-color: rgb(37, 35, 46);
+    box-sizing: border-box;
+    z-index: 99;
+    transition: right 1s ease 0s;
+	padding: 2rem;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 30%;
+	
+}
+
+.cart-heading{
+	color: white;
+	margin-top: 3rem;
+	text-align: center;
+}
+
+.head{
+	color: white;
+	font-size: 2rem;
+	margin-left: 0.8rem;
+}
+.close-btn{
+	border: 0px;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    color: rgb(236, 236, 236);
+    background-color: rgb(27, 26, 32);
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    z-index: 2;
+
+}
+.cart-checkout{
+	background-color: #2d2b36;
+position: absolute;
+bottom: 0;
+left: 0;
+width: 95%;
+height: 150px;
+padding: 1rem;
+
+
+
+}
+.total{
+	color: rgb(152, 146, 146);
+	text-transform: uppercase;
+	font-size: 1.3rem;
+}
+.bill{
+	color: #EABF00;
+	font-size: 1.2rem;
+}
+.checkout-btn{
+	background-color: #1B1A20;
+	color: white;
+	font-size: 1.5rem;
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	border: 0;
+	display: block;
+	width: 100%;
+	margin-top: 3.5rem;
+}
+.cart-item{
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid black;
+	padding: 1rem 0;
+
+}
+.cart-item img{
+	vertical-align: middle;
+   width: 20%;
+   height: 20%;
+    margin-right: 3%;
+}
+.title{
+	color: white;
+	font-size: 1.1rem;
+	
+}
+.cross{
+	width: 16px;
+    height: 16px;
+    font-weight: 900;
+    right: 5%;
+    border-radius: 50%;
+    position: absolute;
+}
+.details{
+	width: 57%;
+	margin-top: 1.5rem;
+	line-height: 1.2;
+	color: gray;
+}
+.plus-icon{
+	color: rgb(183, 183, 183);
+    border: 0px;
+    background-color: rgb(0, 0, 0);
+    width: 25px;
+    height: 25px;
+	margin-top: 4rem;
+	margin-right: 0.3rem;
+}
+.money{
+	color: rgb(234, 191, 0);
+	margin-top: 1.8rem;
+	position: absolute;
+	right: 39px;
+	
 }

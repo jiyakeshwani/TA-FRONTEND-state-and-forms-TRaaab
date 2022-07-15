@@ -8,13 +8,26 @@ class Product extends React.Component {
     };
   }
   handleOrderBy = (e) => {
-    this.setState({
-      selectedFilter: e.target.value,
-    });
+    this.setState(
+      {
+        selectedFilter: e.target.value,
+      },
+      this.handleLocalStorage
+    );
   };
 
-  handleFilterUI = (filter, products) => {
+  handleFilterUI = (filter, sizes, products) => {
     let filteredProducts = [...products];
+    if (sizes.length > 0) {
+      filteredProducts = filteredProducts.filter((p) => {
+        for (const size of sizes) {
+          if (p.availableSizes.includes(size)) {
+            return true;
+          }
+        }
+      });
+    }
+
     if (filter === "highest") {
       filteredProducts = filteredProducts.sort((a, b) => b.price - a.price);
     }
@@ -28,13 +41,14 @@ class Product extends React.Component {
   render() {
     let products = this.handleFilterUI(
       this.state.selectedFilter,
+      this.props.selectedSizes,
       this.props.data
     );
     return (
       <>
         <div className="products">
           <div className="filter flex justify-content">
-            <span>{`${this.props.data.length} Product${
+            <span>{`${products.length} Product${
               this.props.data.length > 1 ? "(s)" : ""
             } found`}</span>
             <div className="order-by">
@@ -51,22 +65,8 @@ class Product extends React.Component {
           </div>
           <div className="flex  wrap">
             {products.map((product) => {
-              console.log(product);
               return (
-                <>
-                  <div className="product">
-                    <div className="tag">Free Shipping</div>
-                    <img
-                      className="product-img"
-                      src={`/static/products/${product.sku}_1.jpg`}
-                      alt={this.props.data.title}
-                    />
-                    <h3>{product.title}</h3>
-                    <hr className="line" />
-                    <span className="product-price">${product.price}</span>
-                    <button className="btn1">Add to cart</button>
-                  </div>
-                </>
+                <Products {...product} handleCart={this.props.handleCart} />
               );
             })}
           </div>
@@ -74,6 +74,29 @@ class Product extends React.Component {
       </>
     );
   }
+}
+
+function Products(props) {
+  return (
+    <>
+      <>
+        <div className="product">
+          <div className="tag">Free Shipping</div>
+          <img
+            className="product-img"
+            src={`/static/products/${props.sku}_1.jpg`}
+            alt={props.title}
+          />
+          <h3>{props.title}</h3>
+          <hr className="line" />
+          <span className="product-price">${props.price}</span>
+          <button onClick={() => props.handleCart(props)} className="btn1">
+            Add to cart
+          </button>
+        </div>
+      </>
+    </>
+  );
 }
 
 export default Product;
